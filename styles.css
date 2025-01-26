@@ -1,115 +1,155 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 16px;
     background-color: #063263;
     border-bottom: 1px solid #ddd;
     width: 100%;
     height: 10%;
 }
-* {
-    box-sizing: border-box;
-    margin: 0px;
-}
+
 .header-left {
     display: flex;
     align-items: center;
 }
+
 .header-left img {
     height: 50px;
     margin-right: 10px;
 }
-.header-left .name {
-    width: 100px;
-}
+
 .header-right {
     display: flex;
     align-items: center;
 }
+
 .header-right a {
     margin-left: 20px;
     text-decoration: none;
     color: white;
+    font-size: 18px; 
     display: flex;
     align-items: center;
-    font-size: 18px; 
 }
+
 .header-right a i {
     margin-right: 5px;
 }
+
 .header-right a:hover {
     color: #ddd;
 }
-.container {
+
+.categories-wrapper {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 35px 0;
 }
-.item {
-    text-align: center;
-}
-.circle-image {
+
+.category-card {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-}
-.column {
+    height: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+}
+
+.category-image {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%; 
+    margin-bottom: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-image:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.category-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (max-width: 1026px) {
+    .category-item {
+      width: 22%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .category-item {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .category-item {
+      width: 100%;
+    }
+  }
+  .slider-wrapper {
+    width: 100%;
+    height: 41vh; /* Fixed height (40% of the viewport height) */
+    position: relative;
     overflow: hidden;
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slider-item {
+    min-width: 100%; /* Each slide takes full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
-.grid-item {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
+
+.slider-image {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the height of the container */
+    object-fit: cover; /* Ensures image fills the container while maintaining aspect ratio */
+    object-position:  center; /* Ensures image is centered */
+    
+   
 }
-.scroll-up {
-    animation: scrollUp 10s linear infinite;
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
 }
-.scroll-down {
-    animation: scrollDown 10s linear infinite;
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
 }
-@keyframes scrollUp {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-}
-@keyframes scrollDown {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100%);
-    }
-}
-@media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
+
+.dot.active {
+    background-color: #007bff;
 }
