@@ -6,7 +6,7 @@
     background-color: #063263;
     border-bottom: 1px solid #ddd;
     width: 100%;
-    height: 8%;
+    height: 10%;
 }
 * {
     box-sizing: border-box;
@@ -19,6 +19,9 @@
 .header-left img {
     height: 50px;
     margin-right: 10px;
+}
+.header-left .name {
+    width: 100px;
 }
 .header-right {
     display: flex;
@@ -37,4 +40,76 @@
 }
 .header-right a:hover {
     color: #ddd;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.item {
+    text-align: center;
+}
+.circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+}
+.grid-item {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+.scroll-up {
+    animation: scrollUp 10s linear infinite;
+}
+.scroll-down {
+    animation: scrollDown 10s linear infinite;
+}
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
