@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #063263;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    height: 10%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    height: 50px;
+    margin-right: 10px;
+}
+.header-left a:hover{
+    cursor: pointer;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px; 
+    display: flex;
+    align-items: center;
+}
+
+.header-right a i {
+    margin-right: 5px;
+}
+
+.header-right a:hover {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.footer{
+    .copyright-text{
+        display: block;
+        margin-top: 0.7rem;
+    }
+}
+.footer {
+    background-color: #063263; /* Orange background */
+    padding: 20px 0; /* Top and bottom padding */
+    display: flex; /* Flex container */
+    flex-direction: column; /* Ensure contents are stacked vertically */
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center align */
+    justify-content: center;
+}
+
+.footer .flex {
+    display: flex; /* Use flex for horizontal alignment */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Horizontally center items */
+    gap: 20px; /* Add spacing between elements */
+    color: white;
+}
+
+
+.footer .vert-line {
+    width: 1px;
+    background-color: white;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.footer a:hover {
+    color: #fff5e6; /* Slightly lighter on hover */
+}
+
+.copyright-text {
+    margin-top: 10px; /* Space above copyright text */
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}

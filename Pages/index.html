@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
     <header class="header">
         <div class="header-left">
-            <img src="./assets/image1.png" alt="Logo" class="logo">
-            <img src="./assets/image2.png" alt="Name" class="name">
+            <a href="index.html"><img src="../assets/image1.png" alt="Logo" class="logo">
+            <img src="../assets/image2.png" alt="Name" class="name"></a>
         </div>
         <div class="header-right">
             <a href="cart.html"><i class="bi bi-cart"></i>Cart</a>
@@ -22,10 +23,10 @@
     <div class="slider-wrapper">
         <div class="slides">
             <div class="slider-item">
-                <img src="./assets/slider_1.png" alt="Slider 1" class="slider-image">
+                <img src="../assets/slider_1.png" alt="Slider 1" class="slider-image">
             </div>
             <div class="slider-item">
-                <img src="./assets/slider_2.png" alt="Slider 2" class="slider-image">
+                <img src="../assets/slider_2.png" alt="Slider 2" class="slider-image">
             </div>
         </div>
         <div class="dots">
@@ -33,11 +34,8 @@
             <span class="dot" onclick="currentSlide(1)"></span>
         </div>
     </div>
-    
-    
-        
-        <div class="categories-wrapper">
-            <div class="category-card">
+       <div id="categories-wrapper">
+            <!-- <div class="category-card">
                 <img src="./assets/Men.png" alt="Men" class="category-image">
                 <p class="category-name">Men</p>
             </div>
@@ -56,10 +54,22 @@
             <div class="category-card">
                 <img src="./assets/Kids.png" alt="Kids" class="category-image">
                 <p class="category-name">Kids</p>
-            </div>
+            </div> -->
+        </div>
+        <div class="footer">
+            <div class = "container py-4 text-center">
+                <div class='flex align-center justify-center text-white fw-3 fs-14'>
+                  <Link to = "/" class='text-uppercase'>privacy policy</Link>
+                  <div class='vert-line'></div>
+                  <Link to = "/" class='text-uppercase'>term of service</Link>
+                  <div class='vert-line'></div>
+                  <Link to = "/" class='text-uppercase'>About SnapCart  .</Link>
+                </div>
+                <span class='copyright-text'>&copy; 2022 SnapCart. All Rights Reserved.</span>
+              </div>
         </div>
     
       
-    <script src="script.js"></script>
+    <script src="../JavaScript/index.js" defer></script>
 </body>
 </html>
