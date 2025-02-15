@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/products.css">
 </head>
 <body>
     <header class="header">
         <div class="header-left">
-            <a href="index.html"><img src="../assets/image1.png" alt="Logo" class="logo">
-            <img src="../assets/image2.png" alt="Name" class="name"></a>
+            <a href="index.html">
+                <img src="../assets/image1.png" alt="Logo" class="logo">
+                <img src="../assets/image2.png" alt="Name" class="name">
+            </a>
+        </div>
+        <div class="header-center">
+            <form id="searchForm" onsubmit="return handleSearch()">
+                <input type="text" id="searchInput" placeholder="Search products..." class="search-bar">
+                <button type="submit" class="search-button"><i class="bi bi-search"></i></button>
+            </form>
         </div>
         <div class="header-right">
             <a href="cart.html"><i class="bi bi-cart"></i>Cart</a>
@@ -56,6 +65,12 @@
                 <p class="category-name">Kids</p>
             </div> -->
         </div>
+        <div class="products-container">
+            <h1 class="products-heading">Products You May Like</h1>
+        <div id="products-wrapper" ></div>
+        </div>
+        
+
         <div class="footer">
             <div class = "container py-4 text-center">
                 <div class='flex align-center justify-center text-white fw-3 fs-14'>
@@ -71,5 +86,6 @@
     
       
     <script src="../JavaScript/index.js" defer></script>
+    <script src="../JavaScript/header.js" defer></script>
 </body>
 </html>

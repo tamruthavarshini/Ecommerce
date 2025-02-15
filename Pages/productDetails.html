@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/productDetails.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="../assets/image1.png" alt="Logo" class="logo">
+                <img src="../assets/image2.png" alt="Name" class="name">
+            </a>
+        </div>
+        <div class="header-center">
+            <form id="searchForm" onsubmit="return handleSearch()">
+                <input type="text" id="searchInput" placeholder="Search products..." class="search-bar">
+                <button type="submit" class="search-button"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+        <div class="header-right">
+            <a href="cart.html"><i class="bi bi-cart"></i>Cart</a>
+            <a href="wishlist.html"><i class="bi bi-heart"></i>Wishlist</a>
+            <a href="login.html"><i class="bi bi-person"></i>Login</a>
+        </div>
+    </header>
+   <div>
+    
+    <div id="product-wrapper"></div>
+<h2 style="padding-left:50px ;">Similar Products</h2>
+    <div id="similar-products-wrapper" class="similar-products-wrapper">
+        
+    </div>
+   </div>
+        <div class="footer">
+            <div class = "container py-4 text-center">
+                <div class='flex align-center justify-center text-white fw-3 fs-14'>
+                  <Link to = "/" class='text-uppercase'>privacy policy</Link>
+                  <div class='vert-line'></div>
+                  <Link to = "/" class='text-uppercase'>term of service</Link>
+                  <div class='vert-line'></div>
+                  <Link to = "/" class='text-uppercase'>About SnapCart  .</Link>
+                </div>
+                <span class='copyright-text'>&copy; 2022 SnapCart. All Rights Reserved.</span>
+              </div>
+        </div>
+    
+        <script src="../JavaScript/header.js"></script>
+    <script src="../JavaScript/productDetails.js" defer></script>
+</body>
+</html>

@@ -5,23 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/wishlist.css">
-    
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
     <header class="header">
         <div class="header-left">
             <a href="index.html">
-                <img src="../assets/image1.png" alt="Logo" class="logo">
-                <img src="../assets/image2.png" alt="Name" class="name">
+                <p class="oblique">SNAPCART</p>
             </a>
-        </div>
-        <div class="header-center">
-            <form id="searchForm" onsubmit="return handleSearch()">
-                <input type="text" id="searchInput" placeholder="Search products..." class="search-bar">
-                <button type="submit" class="search-button"><i class="bi bi-search"></i></button>
-            </form>
+            
         </div>
         <div class="header-right">
             <a href="cart.html"><i class="bi bi-cart"></i>Cart</a>
@@ -29,9 +22,11 @@
             <a href="login.html"><i class="bi bi-person"></i>Login</a>
         </div>
     </header>
-    <div class="wish"><div id="wishlist-container" ></div>
-   
-    </div>  
+    <div class="parallax-container">
+        <!-- <img src="background.jpg" class="background" alt="Background"> -->
+        <img src="left-image.png" class="left-image" alt="Left Image">
+        <img src="right-image.png" class="right-image" alt="Right Image">
+      </div>
        
         <div class="footer">
             <div class = "container py-4 text-center">
@@ -46,7 +41,7 @@
               </div>
         </div>
     
-    <script src="../JavaScript/header.js"></script>  
-    <script src="../JavaScript/wishlist.js" defer></script>
+      
+    <script src="./script.js" defer></script>
 </body>
 </html>

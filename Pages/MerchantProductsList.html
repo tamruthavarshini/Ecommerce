@@ -6,9 +6,43 @@
     <title>Ecommerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/wishlist.css">
+    <link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="../styles/MerchantProductsList.css">
     
 </head>
+<style>
+    #pagination-controls {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+gap: 10px;
+}
+
+.pagination-button {
+display: inline-block;
+padding: 8px 12px;
+border: 1px solid #007bff;
+color: #007bff;
+text-decoration: none;
+border-radius: 5px;
+transition: all 0.3s ease-in-out;
+font-weight: bold;
+}
+
+.pagination-button:hover {
+background-color: #007bff;
+color: #fff;
+}
+
+.pagination-button.active {
+background-color: #007bff;
+color: white;
+border: 1px solid #0056b3;
+pointer-events: none;
+}
+
+</style>
 <body>
     <header class="header">
         <div class="header-left">
@@ -29,9 +63,18 @@
             <a href="login.html"><i class="bi bi-person"></i>Login</a>
         </div>
     </header>
-    <div class="wish"><div id="wishlist-container" ></div>
-   
-    </div>  
+    <section id="product-list">
+        <!-- <h1 id="category-title">Products</h1> -->
+       <div id="products-wrapper">
+           
+       </div>
+       
+   </section>
+   <div id="pagination-controls"></div>
+   <main>
+    <div id="merchant-products-wrapper" class="products-wrapper"></div>
+    <div id="pagination-wrapper" class="pagination-wrapper"></div>
+</main>
        
         <div class="footer">
             <div class = "container py-4 text-center">
@@ -47,6 +90,16 @@
         </div>
     
     <script src="../JavaScript/header.js"></script>  
-    <script src="../JavaScript/wishlist.js" defer></script>
+    <!-- <script src="../JavaScript/search.js" defer></script> -->
+    <script src="../JavaScript/MerchantProductsList.js" defer></script>
+    <!-- <script>
+        function handleSearch() {
+            const searchInput = document.getElementById("searchInput").value.trim();
+            if (searchInput) {
+                window.location.href = `search.html?query=${encodeURIComponent(searchInput)}`;
+            }
+            return false;
+        }
+    </script> -->
 </body>
 </html>

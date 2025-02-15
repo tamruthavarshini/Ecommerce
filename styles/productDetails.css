@@ -1,0 +1,249 @@
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+.product-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 15%;
+    overflow-y: auto;
+  }
+  
+  .thumbnail-image {
+    width: 100%;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    
+  }
+  
+  .thumbnail-image:hover {
+    transform: scale(1.05);
+  }
+  .selected-thumbnail {
+    border-color: #000;
+  }
+  
+  .product-image-selected {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .selected-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 8px;
+    border: 2px solid #000;  
+  }
+  
+
+  .strike-cost {
+    color: #063263;
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+.product-details {
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  
+  .product-description {
+    font-size: 20px;
+    color: #666;
+  }
+  
+  .product-cost {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+  }
+  
+  .product .final-cost {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .strike-price {
+    color: gray;
+    font-size: 1rem;
+    text-decoration: line-through;
+    margin-left: 0px;
+  }
+  
+  .product .off-percentage {
+    color: #063263;
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  
+  .tax-included {
+    margin: 0px;
+    margin-left: 20px;
+    color: #2e7d32;
+  }
+  
+  .product-discount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d32f2f;
+  }
+  
+  .product-final-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  
+  hr {
+    border: none;
+    border-top: 2px solid #063263;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .variant-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: #063263;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left:10px;
+    font-size: 17px;
+    text-align: center;
+    border:2px solid;
+  }
+  .variant-circle:hover{
+    cursor:pointer;
+    background-color: #063263;
+    color: white;
+  }
+  
+  .cart-option,
+  .wishlist-option {
+    text-decoration: none; 
+    color: inherit;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 25px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 25px / 50%;
+    border: 2px solid;
+    background-color: #063263;
+    margin: 40px;
+    margin-right: 0px;
+  }
+  
+  .cart-option span,
+  .wishlist-option span {
+    padding-left: 10px;
+    position: relative;
+    color: white;
+   
+  }
+  
+  .cart-option:hover,
+  .wishlist-option:hover {
+    cursor: pointer;
+    background-color: white;
+    
+    
+  }
+  .cart-option:hover span,
+  .wishlist-option:hover  span{
+    color: #063263;
+  }
+  
+  .wishlist-option{
+    margin-bottom: 10px;
+  }
+  .size-text{
+    margin-right: 80px;
+  }    
+
+  .selected-variant{
+    background-color: #063263;
+    color: white;
+  }
+
+  .similar-products-wrapper {
+    background: linear-gradient(to bottom, #063263, #ffffff); /* Dark to light gradient */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    min-height: 300px; /* Ensures the gradient is visible */
+  }
+  
+  .similar-product-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .similar-product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .similar-product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .similar-product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #063263;
+    margin-top: 10px;
+  }
+  
+  .similar-product-description {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .similar-product-cost {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e63946;
+  }
+  
+  .product-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  

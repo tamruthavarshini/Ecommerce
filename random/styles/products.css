@@ -1,7 +1,7 @@
 #products-wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
+    gap: 15px;
     justify-content: center;
     padding: 0px 20px 5px 20px;
 }
@@ -48,7 +48,6 @@
 .product-card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
 }
 
 .product-image {
@@ -106,7 +105,3 @@
     font-weight: bold;
     color: rgb(221, 80, 80);
 }
-.product-link {
-    text-decoration: none; 
-    color: inherit;
-  }

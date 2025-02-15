@@ -34,7 +34,7 @@
 .category-name {
     font-size: 20px;
     font-weight: bold;
-    margin: 5px 0px;
+    margin: 16px 0px;
     text-align: center;
 }
 .category-link {
@@ -110,31 +110,4 @@
 
 .dot.active {
     background-color: #007bff;
-}
-h1 {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-.products-container {
-  background: linear-gradient(to bottom, #063263, #ffffff); /* Dark to light gradient */
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  min-height: 300px; /* Ensures the gradient is visible */
-}
-
-.products-heading {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  padding: 20px;
-  background: linear-gradient(to right, #063263, #063263);
-  border-radius: 10px;
 }

@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.orders-header {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* Profile Section */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 76.5vh;
+}
+
+.profile-content {
+    display: flex;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+/* Profile Details (Left Side) */
+.profile-details {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.profile-details h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#profileDetails p {
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.logout-button {
+    background: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+    background: #c9302c;
+}
+
+/* Merchant Section (Right Side) */
+.merchant-section {
+    width: 50%;
+    text-align: center;
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+}
+
+.customer-button
+{
+    display: block;
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+    width:200px;
+   
+    transition: background 0.3s ease;
+}
+/* Merchant Buttons */
+.merchant-button {
+    display: block;
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background 0.3s ease;
+}
+
+.merchant-button:hover , .customer-button:hover {
+    background: #0056b3;
+}
+
+/* Centered Profile for Non-Merchants */
+.center-profile {
+    display: flex;
+    justify-content: center;
+}
+
+.center-profile .profile-details {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.center-profile #profileDetails p {
+    display: inline-block;
+    text-align: left;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .profile-details, .merchant-section {
+        width: 100%;
+        text-align: center;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .center-profile .profile-details {
+        width: 100%;
+    }
+}
